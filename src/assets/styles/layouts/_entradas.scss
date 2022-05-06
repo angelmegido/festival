@@ -1,0 +1,33 @@
+form {
+  padding: 20px;
+  border: 1px solid $accent;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+option {
+  color: $accent;
+  border-radius: 15px;
+}
+
+input {
+  color: $accent;
+  border-radius: 15px;
+}
+
+textarea select {
+  color: $accent;
+  border-radius: 15px;
+}
+
+.btn {
+  background-color: $accent;
+  margin: 15px;
+}
+
+@media (min-width: 42em) and (min-height: 27em) {
+.grupos {
+  display: flex;
+  flex-direction: row;
+}
+}

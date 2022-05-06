@@ -1,0 +1,13 @@
+@use "sass:color";
+
+$font-family-sans-serif:  "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$main: #fff;
+$accent: #f60ffe;
+$text: #3c0064;
+
+
+$header-font: $font-family-sans-serif;
+$body-font: $font-family-serif;

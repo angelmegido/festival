@@ -1,0 +1,38 @@
+header {
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    background-color: $accent;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    width: 90vw;
+}
+
+.main-nav li:first-child {
+    margin-right: auto;
+     }
+
+.main-nav a {
+    margin: 0px;
+      display: block;
+      padding-right: 10px;
+      text-decoration: none;
+  }
+  .main-nav a:hover {
+color: $main;
+  }
+
+
+.main-nav ul {
+    margin: 10px;
+    padding: 10px;
+}
+
+  header img {
+      width: 80px;
+  }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Entradas</title>
+  </head>
+  <header>
+    <include src="./views/navbar.html"></include>
+  </header>
+  <body>
+    <main class="centrador">
+      <h1>Compra tus entradas para el <span>FestiMar</span> y disfruta a tope de la mejor música.</h1>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/vishnu-nair.jpg" class="d-block w-100" alt="Vishnu Nair en concierto">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/austin-neill.jpg" class="d-block w-100" alt="Austin Neill en concierto">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/Danny Howe.jpg" class="d-block w-100" alt="Danny Howe en concierto">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Videos del FestiMar" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click para ver los videos</button>
+
+      <h2>Pura adrenalina, música en directo durante más de 14 horas todos los días.</h2>
+      <p>Cientos de actividades, tres escenarios principales y cinco secundarios, zonas chill out, bares, restaurantes, duchas taquillas y todo lo que puedes necesitar en tus zonas de acampada. </p> 
+<div class="grupos">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/images/Danny Howe.jpg" class="card-img-top" alt="Danny Howe en concierto">
+        <div class="card-body">
+          <h5 class="card-title">Danny Howe</h5>
+          <p class="card-text">El nuevo fenómeno de la música con un directo inolvidable que no te defraudará.</p>
+          <a href="#" class="btn btn-primary">ver más</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/images/austin-neill.jpg" class="card-img-top" alt="Austin Neill en concierto">
+        <div class="card-body">
+          <h5 class="card-title">Austin Neill</h5>
+          <p class="card-text">Uno de los grandes vuelve al FestiMar para sorprendernos con su intenso rock melódico.</p>
+          <a href="#" class="btn btn-primary">ver más</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/images/vishnu-nair.jpg" class="card-img-top" alt="Vishnu Nair en concierto">
+        <div class="card-body">
+          <h5 class="card-title">Vishnu Nair</h5>
+          <p class="card-text">Elctrorock en estado puro, el músico indio es toda una leyenda con un ejercito de seguidores.</p>
+          <a href="#" class="btn btn-primary">ver más</a>
+        </div>
+      </div>
+    </div>
+      
+
+      <h1>¡ No esperes mas y compra tu entrada !</h1>
+      <p>Selecciona tu tipo de abono, facilitanos tus datos de contactos y preparate a <span>disfrutar</span> del <span>FestiMar</span></p>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Tu nombre: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Tu correo:   <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Tipo de abono: <select name="role[]" multiple>
+            <option value="Un dia">Un día</option>
+            <option value="dos dias">Dos días</option>
+            <option value="tres dias">Tres días</option>
+            <option value="Festival">Festival completo</option>
+          </select></label>
+        </p>
+
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      
+      </div>
+      </main>
+       <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+  <footer>
+    <include src="./views/footer.html"></include>
+  </footer>
+</html>

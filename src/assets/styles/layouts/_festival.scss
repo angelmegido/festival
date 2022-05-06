@@ -1,0 +1,122 @@
+.articulo {
+    height: 55vh;
+    background-image: url(../images/vishnu-nair.jpg);
+    background-size: cover;
+    color: var(--light-color);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-weight:bold;
+}
+.articulo h1 {
+    font-size: 6.5rem;
+    color: $main;
+}
+
+.articulo h2 {
+    font-size: 2.5rem;
+    color: $main;
+}
+
+.articulo h3 {
+    font-size: 1rem;
+    color: $main;
+}
+
+.centrador {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20%;
+    padding-left: 20%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    }
+
+    .centrador ol  {
+        border-top: 2px solid $accent;
+        border-bottom: 2px solid $accent;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        list-style: none;
+        list-style-type: disc;
+        counter-reset: steps;
+        
+    }
+    .centrador ol li {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        margin-top: 15px;
+        counter-increment: steps;
+    }
+    .centrador ol span {
+        font-size: 1.5rem;
+    }
+
+
+    .centrador li::before {
+        content: counter(steps);
+        margin-right: 0.5rem;
+        background: $accent;
+        color: $text;
+        width: 1.2em;
+        height: 1.2em;
+        border-radius: 50%;
+        display: inline-grid;
+        place-items: center;
+        line-height: 1.2em;
+      }
+
+      blockquote {
+        font-style: italic;
+        background-color: $light;
+        padding: 15px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+    }
+    blockquote cite{
+        font-size: 1.4rem;
+        font-style: normal;
+    }
+    @media (min-width: 800px) {
+        .twocol {
+            display: grid;
+            grid-template-columns: 40% auto;
+            column-gap: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 15%;
+            padding-left: 15%;
+        }
+    }
+
+    .fest {
+        margin-top: 15px;
+        margin-bottom: 60px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+  
+    figure.fest {
+        width: 75%;
+    }
+    
+    figcaption {
+        font-size: 0.7rem;
+        padding-top: 15px;
+        text-align: right;
+    }
